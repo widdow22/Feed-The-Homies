@@ -1,0 +1,152 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "F42X878v6d1YG9z49aL6K"
+uri = "file://artifacts/feed-the-homies/public/hero.png"
+type = "image"
+title = "Community eating together joyfully"
+
+[[generated]]
+id = "FtYRBmHSobjmUkeMiyHGh"
+uri = "file://artifacts/feed-the-homies/public/about.png"
+type = "image"
+title = "Documentary portrait of child"
+
+[[generated]]
+id = "fw5eVzbjf5tFRSKDnQjAR"
+uri = "file://artifacts/feed-the-homies/public/meal-1.png"
+type = "image"
+title = "African cultural meal"
+
+[[generated]]
+id = "MkAHwqFxpYPTddHAeJA5n"
+uri = "file://artifacts/feed-the-homies/public/meal-2.png"
+type = "image"
+title = "Middle Eastern cultural meal"
+
+[[generated]]
+id = "vSKjp4c8Z6Hs6SNP__kNL"
+uri = "file://artifacts/feed-the-homies/public/meal-3.png"
+type = "image"
+title = "Asian cultural meal"
+
+[[generated]]
+id = "6Folh7zcMrBr6gKyhQWW8"
+uri = "file://artifacts/feed-the-homies/public/merch-1.png"
+type = "image"
+title = "Streetwear hoodie product shot"
+
+[[generated]]
+id = "IJ3aHPVYaOElwnZJFkoO2"
+uri = "file://artifacts/feed-the-homies/public/merch-2.png"
+type = "image"
+title = "Streetwear tee product shot"
+
+[[generated]]
+id = "RBOQ-OOVjGJvZUloOPXMD"
+uri = "file://artifacts/feed-the-homies/public/story-1.png"
+type = "image"
+title = "Children eating together moody"
+
+[[generated]]
+id = "st2t46CmgbCvpbymICkYA"
+uri = "file://artifacts/feed-the-homies/public/story-2.png"
+type = "image"
+title = "Hands handing plates moody"
+
+[[generated]]
+id = "5r_9HV0wh_4eQxsvxC4eS"
+uri = "file://artifacts/feed-the-homies/public/footer.png"
+type = "image"
+title = "Hands sharing bread"
+
+[[generated]]
+id = "EPQKLwl5tA-d6Ovjhny3g"
+uri = "file://artifacts/feed-the-homies/public/action-hands.png"
+type = "image"
+title = "hands passing plate of food"
+
+[[generated]]
+id = "Ii3pa7-fAlLFaMzp8puL4"
+uri = "file://artifacts/feed-the-homies/public/action-soup.png"
+type = "image"
+title = "steaming bowl of soup"
+
+[[generated]]
+id = "A-8znBKD2BbPzKJT1ngu0"
+uri = "file://artifacts/feed-the-homies/public/action-table.png"
+type = "image"
+title = "dark table with cultural food"
+
+[[generated]]
+id = "h0JXmMtLEcjzqfQ-2z5nP"
+uri = "file://artifacts/feed-the-homies/public/collection-hoodie.png"
+type = "image"
+title = "heavyweight luxury hoodie"
+
+[[generated]]
+id = "RmpqO3YtNdQYRv67P9KVr"
+uri = "file://artifacts/feed-the-homies/public/collection-tee.png"
+type = "image"
+title = "vintage wash action tee"
+
+[[generated]]
+id = "gy1E5oxnX9GCGfhrfz8x4"
+uri = "file://artifacts/feed-the-homies/public/collection-apron.png"
+type = "image"
+title = "luxury chef apron"
+
+[[generated]]
+id = "R1LX7RDc0n_zbvolU4NJX"
+uri = "file://artifacts/feed-the-homies/public/meal-west-africa.png"
+type = "image"
+title = "West African food close-up"
+
+[[generated]]
+id = "2cH_bSzT6xRUnqXUZBrTH"
+uri = "file://artifacts/feed-the-homies/public/meal-palestine.png"
+type = "image"
+title = "Palestinian food close-up"
+
+[[generated]]
+id = "E2dmNtO8y-1aQBFJ0tNS9"
+uri = "file://artifacts/feed-the-homies/public/meal-se-asia.png"
+type = "image"
+title = "Southeast Asian food close-up"
+
+[[generated]]
+id = "p7YwYI5WIYqG8zf7uV2Xi"
+uri = "file://artifacts/feed-the-homies/public/meal-latin-america.png"
+type = "image"
+title = "Latin American food close-up"
+
+[[generated]]
+id = "pQN9yduvvBc7GOKAF-_Qs"
+uri = "file://artifacts/feed-the-homies/public/meal-middle-east.png"
+type = "image"
+title = "Middle Eastern food close-up"
+
+[[generated]]
+id = "ATLlTlfEOf3S-Fz7dXVro"
+uri = "file://artifacts/feed-the-homies/public/story-3.png"
+type = "image"
+title = "Home cooked meal on table"
+
+[[generated]]
+id = "qdrU1DNRKV7jtIBRsBF54"
+uri = "file://artifacts/feed-the-homies/public/merch-hoodie.png"
+type = "image"
+title = "Hoodie flatlay on concrete"
+
+[[generated]]
+id = "jI6QpLHlx1v3BpWs4R4C9"
+uri = "file://artifacts/feed-the-homies/public/merch-tee.png"
+type = "image"
+title = "Tee flatlay on concrete"
+
+[[generated]]
+id = "dn5ABn7l3mZ9rXJsrBuBp"
+uri = "file://artifacts/feed-the-homies/public/merch-apron.png"
+type = "image"
+title = "Apron flatlay on wood"

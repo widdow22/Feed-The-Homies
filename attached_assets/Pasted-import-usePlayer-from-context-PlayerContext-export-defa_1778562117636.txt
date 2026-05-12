@@ -1,0 +1,225 @@
+import { usePlayer } from "@/context/PlayerContext";
+
+export default function MusicWidget() {
+  const { playing, trackIdx, tracks } = usePlayer();
+  const track = tracks[trackIdx];
+
+  return (
+    <div style={{
+      position: "fixed",
+      bottom: 40,
+      right: 40,
+      zIndex: 200,
+      display: "flex",
+      alignItems: "flex-start",
+      gap: 12,
+      filter: "drop-shadow(0 0 24px rgba(0, 180, 198, 0.4))",
+      animation: "floatHead 3s ease-in-out infinite",
+    }}>
+
+      {/* THE HEAD */}
+      <div style={{
+        position: "relative",
+        width: 220,
+        height: 280,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}>
+
+        {/* Glow behind head */}
+        <div style={{
+          position: "absolute",
+          top: "10%",
+          left: "10%",
+          width: "80%",
+          height: "80%",
+          borderRadius: "50%",
+          background: "radial-gradient(circle, rgba(0,180,198,0.3) 0%, transparent 70%)",
+          animation: "pulse 2.5s ease-in-out infinite",
+          zIndex: 0,
+        }} />
+
+        {/* Top buttons bar */}
+        <div style={{
+          display: "flex",
+          gap: 6,
+          marginBottom: 6,
+          zIndex: 2,
+        }}>
+          {["⏮", "⏸", "⏹", "⏭"].map((btn, i) => (
+            <div key={i} style={{
+              width: 28,
+              height: 28,
+              borderRadius: 4,
+              background: "linear-gradient(145deg, #00c8d8, #007a8a)",
+              boxShadow: "2px 2px 4px rgba(0,0,0,0.5), -1px -1px 3px rgba(0,220,240,0.3)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 10,
+              color: "#fff",
+              cursor: "pointer",
+            }}>{btn}</div>
+          ))}
+        </div>
+
+        {/* Head body */}
+        <div style={{
+          position: "relative",
+          width: 180,
+          height: 220,
+          borderRadius: "50% 50% 45% 45%",
+          background: "linear-gradient(145deg, #00d4e8 0%, #00b4c6 40%, #007a8a 80%, #005a6a 100%)",
+          boxShadow: `
+            inset -12px -12px 24px rgba(0,60,80,0.6),
+            inset 8px 8px 16px rgba(0,220,240,0.3),
+            4px 8px 20px rgba(0,0,0,0.5),
+            0 0 40px rgba(0,180,198,0.2)
+          `,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 1,
+        }}>
+
+          {/* Left speaker */}
+          <div style={{
+            position: "absolute",
+            left: -28,
+            top: "30%",
+            width: 26,
+            height: 60,
+            borderRadius: 8,
+            background: "linear-gradient(145deg, #00c8d8, #006878)",
+            boxShadow: "inset 2px 2px 6px rgba(0,0,0,0.4), 2px 2px 8px rgba(0,0,0,0.3)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            padding: "6px 0",
+          }}>
+            {[...Array(4)].map((_, i) => (
+              <div key={i} style={{ width: 14, height: 14, borderRadius: "50%", background: "#004858", boxShadow: "inset 1px 1px 3px rgba(0,0,0,0.5)" }} />
+            ))}
+          </div>
+
+          {/* Right speaker */}
+          <div style={{
+            position: "absolute",
+            right: -28,
+            top: "30%",
+            width: 26,
+            height: 60,
+            borderRadius: 8,
+            background: "linear-gradient(145deg, #00c8d8, #006878)",
+            boxShadow: "inset 2px 2px 6px rgba(0,0,0,0.4), 2px 2px 8px rgba(0,0,0,0.3)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            padding: "6px 0",
+          }}>
+            {[...Array(4)].map((_, i) => (
+              <div key={i} style={{ width: 14, height: 14, borderRadius: "50%", background: "#004858", boxShadow: "inset 1px 1px 3px rgba(0,0,0,0.5)" }} />
+            ))}
+          </div>
+
+          {/* Eyes */}
+          <div style={{ display: "flex", gap: 28, marginBottom: 8 }}>
+            {[0, 1].map(i => (
+              <div key={i} style={{
+                width: 20,
+                height: 24,
+                borderRadius: "50%",
+                background: "radial-gradient(circle at 40% 35%, #1a4a50, #000d10)",
+                boxShadow: "inset 2px 2px 6px rgba(0,0,0,0.8), 0 0 8px rgba(0,200,220,0.3)",
+              }} />
+            ))}
+          </div>
+
+          {/* Screen / Spotify embed */}
+          <div style={{
+            width: 120,
+            height: 90,
+            borderRadius: 6,
+            background: "#000d10",
+            boxShadow: "inset 3px 3px 8px rgba(0,0,0,0.9), inset -1px -1px 4px rgba(0,180,198,0.1), 0 0 12px rgba(0,0,0,0.5)",
+            overflow: "hidden",
+            position: "relative",
+            border: "2px solid #003a48",
+          }}>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/6jlUN17DYWF20m6oX3Z1Kx?utm_source=generator&theme=0"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              style={{ border: "none", opacity: 0.9 }}
+            />
+            {/* Scanline overlay */}
+            <div style={{
+              position: "absolute",
+              inset: 0,
+              background: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.08) 2px, rgba(0,0,0,0.08) 4px)",
+              pointerEvents: "none",
+            }} />
+          </div>
+
+          {/* Track marquee */}
+          <div style={{
+            marginTop: 8,
+            width: 120,
+            overflow: "hidden",
+            height: 14,
+          }}>
+            <div style={{
+              fontSize: 8,
+              color: "rgba(0,220,240,0.7)",
+              fontFamily: "'Courier New', monospace",
+              whiteSpace: "nowrap",
+              animation: "marquee 8s linear infinite",
+              letterSpacing: "0.06em",
+            }}>
+              {track?.artist} — {track?.title} &nbsp;&nbsp;&nbsp; {track?.artist} — {track?.title}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* PLAYLIST WINDOW */}
+      <div style={{
+        width: 180,
+        background: "#060e0c",
+        border: "1px solid rgba(0,180,198,0.4)",
+        boxShadow: "4px 4px 16px rgba(0,0,0,0.6)",
+        fontFamily: "'Courier New', monospace",
+        marginTop: 36,
+      }}>
+        {/* Title bar */}
+        <div style={{
+          background: "linear-gradient(90deg, #00b4c6, #007a8a)",
+          padding: "3px 8px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}>
+          <span style={{ fontSize: 9, color: "#fff", fontWeight: "bold", letterSpacing: "0.1em" }}>PLAYLIST</span>
+          <span style={{ fontSize: 9, color: "#fff", cursor: "pointer" }}>✕</span>
+        </div>
+        {/* Tracks */}
+        <div style={{ maxHeight: 220, overflowY: "auto", padding: "4px 0" }}>
+          {tracks.map((t, i) => (
+            <div key={i} style={{
+              padding: "3px 8px",
+              fontSize: 8,
+              color: i === trackIdx ? "#00d4e8" : "rgba(0,180,198,0.5)",
+              background: i === trackIdx ? "rgba(0,180,198,0.1)" : "transparent",
+              display: "flex",
+              justifyContent: "space-between",
+              letterSpacing: "0.04em",
+              borderLeft: i === trackIdx ? "2px solid #00d4e8" : "2px solid transparent",
+            }}>
+              <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", maxWidth: 130 }}>

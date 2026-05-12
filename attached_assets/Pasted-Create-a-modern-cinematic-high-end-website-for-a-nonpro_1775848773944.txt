@@ -1,0 +1,74 @@
+Create a modern, cinematic, high-end website for a nonprofit and cultural brand called Feed the Homies.
+
+The brand combines streetwear, food, and global awareness. The mission is to provide meals and support to communities—especially children—affected by war, poverty, and displacement, while honoring their cultures through food and storytelling.
+
+🎨 Design Style:
+Dark mode with warm tones (black, deep brown, gold accents)
+Minimal but bold
+Editorial / documentary feel (like a Netflix series meets a luxury streetwear brand)
+Strong typography (clean sans-serif + subtle serif accents)
+Full-screen visuals and smooth transitions
+High-end, “it girl / trendsetter” aesthetic (not corny, not charity-looking)
+🧭 Pages + Sections:
+1. Landing Page (Hero Section)
+Full-screen video or image (people, culture, food, real moments)
+Overlay text:
+“For the people. By the people.”
+“Feed the Homies.”
+Subtext:
+“Food. Culture. Awareness. Action.”
+CTA buttons:
+“Get Involved”
+“Shop the Drop”
+2. About Section
+Short, powerful storytelling:
+“Feed the Homies is a movement turning awareness into action…”
+Focus on:
+Cultural connection
+Children affected by war
+Dignity through food
+3. Mission / Impact
+Clean layout with icons or stats:
+Meals served
+Cities reached
+Communities supported
+Keep it real and transparent
+4. Sunday Meals (Signature Section)
+Highlight rotating cultural meals (Africa → Middle East → Asia)
+Show food visuals + country names
+Add storytelling:
+“Each meal tells a story of migration, survival, and identity.”
+5. Shop (Merch)
+Streetwear-style layout
+Hoodies, tees, aprons
+Minimal product cards
+Messaging:
+“Every purchase feeds someone.”
+6. Content / Stories
+Blog or video section
+Future docuseries vibes
+Topics:
+Children affected by war
+Cultural stories
+Behind the scenes
+7. Get Involved
+Volunteer
+Donate
+Partner with us
+Keep it simple and accessible
+8. Footer
+Social links (Instagram, TikTok)
+Email signup:
+“Stay tapped in.”
+Minimal, clean
+🎥 Extra Features:
+Smooth scroll animations
+Hover effects on buttons and images
+Subtle sound or music option (optional, cinematic)
+Mobile-first design
+🧠 Tone of Voice:
+Confident
+Real
+Cultural
+Empowering
+Not pity-based, not overly emotional

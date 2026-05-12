@@ -1,0 +1,51 @@
+Build a live donation transparency page for a nonprofit called Feed the Homies.
+The concept:
+Total radical transparency. People can see exactly where every dollar goes in real time. It should feel like a live mission control dashboard but warm and personal — not corporate. Think a beautiful receipt that updates live.
+Data source: Airtable
+Pull all data from an Airtable base. Use the Airtable API. The base will have these tables:
+
+Totals — one row with:
+
+total_raised (number)
+total_donated (number)
+total_allocated (number)
+
+
+Allocations — rows for each category:
+
+category (text) — e.g. "Meals", "Toiletry Kits", "Hoodie Production", "Media & Storytelling"
+amount_allocated (number)
+goal (number)
+emoji (text)
+
+
+Recent Activity — rows for each donation/allocation event:
+
+type (text) — "donation" or "allocation"
+amount (number)
+note (text) — e.g. "Anonymous from Dallas" or "50 meals funded"
+timestamp (date/time)
+
+
+
+Page sections:
+
+Hero number — giant live total raised. Should feel like it could tick up any second. Warm, large, centered. Label underneath: "raised so far"
+Where it goes — a breakdown of each allocation category shown as progress bars toward their goal. Each bar fills as money is allocated. Label shows amount allocated vs goal. Feels handmade not corporate.
+Live feed — a scrolling list of recent activity. Donations and allocations appearing like a ticker. Each entry shows type, amount, note, and time ago. New entries appear at the top. Refresh every 30 seconds automatically.
+The promise — a short personal note underneath everything. Something like: "We show you everything because you deserve to know. Every dollar has a name."
+
+Design:
+
+Match the rest of the Feed the Homies site — warm dark tones, personal feeling
+Numbers should feel alive — subtle pulse animation on the total
+Progress bars warm colored — dusty rose or teal
+Live feed feels like a receipt or a journal, not a spreadsheet
+Mobile responsive
+
+Technical:
+
+Airtable API key and base ID pulled from environment variables: AIRTABLE_API_KEY and AIRTABLE_BASE_ID
+Auto-refresh every 30 seconds without full page reload
+Handle empty states gracefully — if no data yet show placeholder values
+No authentication needed to view — fully public page

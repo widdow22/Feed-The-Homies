@@ -1,0 +1,32 @@
+Build a personal, deeply intentional website for a nonprofit called Feed the Homies.
+The feeling:
+The vibe is late night, introspective, emotionally honest. Think someone who spent weeks perfecting their Tumblr or MySpace page — personal, warm, a little maximalist but everything means something. The music playing in the background of this page would be Prod Marvin, late night R&B, soft rap. It's 2am and someone who really cares made this. Not an agency. A person.
+This is not a charity website. It is a portal. A place people feel found.
+Visual direction:
+
+Warm dark tones — deep burgundy, aged cream, soft black, dusty rose accents
+Mix of a serif or handwritten-feeling font for emotional moments and a clean sans-serif for structure
+Feels layered — like stickers, notes, and intention all in one place
+Subtle textures okay — aged paper, grain — nothing too heavy
+Spotify embed for the Feed the Homies playlist: https://open.spotify.com/playlist/6jlUN17DYWF20m6oX3Z1Kx
+Small personal touches everywhere — like someone left little notes for you to find
+
+Sections:
+
+Opening — full screen, minimal. Just the name and one line that feels like a letter opener. Something like "you found us." or "this is for you." Cursor or subtle animation okay.
+About — written like a personal note, not a mission statement. First person. Raw. "This started because..." Handwritten-style font for pull quotes.
+The Playlist — embed the Spotify playlist. Frame it like "this is what we're made of" or "put this on first."
+What we do — Feed. Wear. Remember. But presented like journal entries or pinned notes, not a corporate grid.
+Hoodie drop — feels like a secret you're letting them in on. Limited. Rare. Quiet. Not a store page.
+Join us — email signup that feels like leaving your number with a friend, not subscribing to a newsletter.
+Footer — something small and human. A quote, a city, a feeling.
+
+Technical:
+
+Fully responsive
+Spotify embed must work
+Subtle scroll animations if possible — nothing flashy, just things fading or sliding in softly
+Email signup confirms with something warm, not "thank you for subscribing"
+No stock photos. Type, texture, and color do everything.
+
+Most important: Make it feel like a person poured themselves into this. Every corner should feel intentional and personal. If it starts looking like a template, start over.

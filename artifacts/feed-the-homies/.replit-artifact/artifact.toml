@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Feed the Homies"
+version = "1.0.0"
+id = "artifacts/feed-the-homies"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22771
+
+[services.development]
+run = "pnpm --filter @workspace/feed-the-homies run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/feed-the-homies", "run", "build" ]
+publicDir = "artifacts/feed-the-homies/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22771"
+BASE_PATH = "/"
