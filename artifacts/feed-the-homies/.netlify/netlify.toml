@@ -1,13 +1,17 @@
 plugins = []
 headers = []
-redirects = []
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
 [functions]
 
 [functions."*"]
 
 [build]
-publish = "/opt/build/repo/artifacts/feed-the-homies/dist"
+publish = "/opt/build/repo/artifacts/feed-the-homies/dist/public"
 publishOrigin = "ui"
 commandOrigin = "ui"
 command = "pnpm --filter @workspace/feed-the-homies... run build"
