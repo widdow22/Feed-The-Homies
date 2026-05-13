@@ -84,7 +84,7 @@ export default function Home() {
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      ctx.fillStyle = "rgb(2, 6, 18)";
+      ctx.fillStyle = "rgb(18, 13, 15)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       for (let i = 0; i < NUM; i++) reset(i, canvas.width, canvas.height);
     };
@@ -96,7 +96,7 @@ export default function Home() {
       const w = canvas.width;
       const h = canvas.height;
 
-      ctx.fillStyle = "rgba(2, 6, 18, 0.045)";
+      ctx.fillStyle = "rgba(18, 13, 15, 0.045)";
       ctx.fillRect(0, 0, w, h);
 
       const scale = 0.0022;
@@ -112,10 +112,10 @@ export default function Home() {
 
         const life = age[i] / MAX_AGE;
         const alpha = Math.min(life * 6, 1) * (1 - life) * 0.75;
-        const r = Math.floor(life * 40);
-        const g = Math.floor(180 + life * 40);
-        const b = Math.floor(220 - life * 80);
-        ctx.strokeStyle = `rgba(${r},${g},${b},${alpha})`;
+        const r = Math.floor(139 - life * 39);
+        const g = 0;
+        const b = 0;
+        ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.55})`;
         ctx.lineWidth = 0.9;
         ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(px[i], py[i]); ctx.stroke();
       }
@@ -138,7 +138,7 @@ export default function Home() {
         {/* 1. Hero */}
         <section className="relative h-screen w-full flex flex-col items-center justify-center px-6 overflow-hidden bg-black" data-testid="section-hero">
           <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 25%, rgba(2,6,18,0.7) 100%)" }} />
+          <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, transparent 25%, rgba(18,13,15,0.7) 100%)" }} />
 
           <motion.div
             variants={heroStagger}
