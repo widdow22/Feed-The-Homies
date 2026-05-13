@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:wght@400..900&family=Share+Tech+Mono&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -50,7 +50,7 @@
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: 'Lora', serif;
   --app-font-hand: 'Caveat', cursive;
-  --app-font-orbitron: 'Orbitron', sans-serif;
+  --app-font-orbitron: 'Playfair Display', serif;
   --app-font-mono: 'Share Tech Mono', monospace;
   
   --radius: 0rem;
@@ -97,66 +97,31 @@
   }
 }
 
-/* ── Cyberpunk glitch title ── */
+/* ── Crimson neon breathing title ── */
 .glitch {
   position: relative;
-  text-shadow:
-    0 0 8px rgba(0, 255, 255, 0.6),
-    0 0 20px rgba(0, 255, 255, 0.3),
-    0 0 40px rgba(0, 255, 255, 0.1);
-  animation: glitch-main 4s infinite;
+  animation: neon-breathe 4s ease-in-out infinite;
 }
 
 .glitch::before,
 .glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
+  content: none;
 }
 
-.glitch::before {
-  color: #ff00cc;
-  animation: glitch-before 4s infinite;
-  clip-path: polygon(0 0, 100% 0, 100% 38%, 0 38%);
-  transform: translate(-3px, 0);
-}
-
-.glitch::after {
-  color: #00ffee;
-  animation: glitch-after 4s infinite;
-  clip-path: polygon(0 62%, 100% 62%, 100% 100%, 0 100%);
-  transform: translate(3px, 0);
-}
-
-@keyframes glitch-main {
-  0%, 88%, 100% { opacity: 1; transform: none; }
-  89%  { transform: skewX(-1.5deg); opacity: 0.9; }
-  91%  { transform: skewX(1deg);   opacity: 1; }
-  93%  { transform: translate(2px, 0) skewX(-0.5deg); }
-  95%  { transform: none; }
-  97%  { transform: translate(-1px, 0); opacity: 0.95; }
-}
-
-@keyframes glitch-before {
-  0%, 88%, 100% { transform: translate(-3px, 0); opacity: 0.8; }
-  89%  { transform: translate(-6px, 1px); }
-  90%  { transform: translate(2px, -1px); }
-  91%  { transform: translate(-3px, 0); }
-  95%  { transform: translate(-5px, 0); opacity: 1; }
-  96%  { transform: translate(-3px, 0); }
-}
-
-@keyframes glitch-after {
-  0%, 88%, 100% { transform: translate(3px, 0); opacity: 0.8; }
-  89%  { transform: translate(6px, -1px); }
-  90%  { transform: translate(-2px, 1px); }
-  91%  { transform: translate(3px, 0); }
-  95%  { transform: translate(5px, 0); opacity: 1; }
-  96%  { transform: translate(3px, 0); }
+@keyframes neon-breathe {
+  0%, 100% {
+    text-shadow:
+      0 0 6px rgba(139, 0, 0, 0.5),
+      0 0 16px rgba(139, 0, 0, 0.25),
+      0 0 32px rgba(139, 0, 0, 0.1);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(204, 0, 0, 0.8),
+      0 0 28px rgba(204, 0, 0, 0.45),
+      0 0 56px rgba(204, 0, 0, 0.2),
+      0 0 80px rgba(204, 0, 0, 0.08);
+  }
 }
 
 /* ── Scanlines overlay ── */
